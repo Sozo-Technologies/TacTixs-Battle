@@ -1,8 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const route = require("./api/routes");
-const handler = require("./api/controller");
+// const route = require("./api/routes");
+// const handler = require("./api/controller");
 
 const app = express();
 const port = 5000;
