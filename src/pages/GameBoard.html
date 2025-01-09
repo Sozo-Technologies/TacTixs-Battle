@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+ <link rel="stylesheet" href="./../assets/style/GameBoard.css"> 
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <span class="x-color">X</span>
+                <span class="o-color">O</span>
+            </div>
+            <div class="turn-indicator">
+                <span id="current-turn">X</span> TURN
+            </div>
+            <button id="reset-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                    <path d="M21 3v5h-5"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Game Board -->
+        <div class="board">
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+        </div>
+
+        <!-- Score -->
+        <div class="score-container">
+            <div class="score-box x-score">
+                <div>X (YOU)</div>
+                <div id="x-score" class="score">14</div>
+            </div>
+            <div class="score-box ties">
+                <div>TIES</div>
+                <div id="ties-score" class="score">32</div>
+            </div>
+            <div class="score-box o-score">
+                <div>O (CPU)</div>
+                <div id="o-score" class="score">11</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
